@@ -412,6 +412,7 @@ Hero
   height: 100vh;
   background: var(--clr-primary-10);
   position: relative;
+
 }
 
 .hero-center {
@@ -465,6 +466,12 @@ Hero
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
+    /* display:none; */
+    height:90%;
+    width: 70%;
+    border-radius: 50%;
+    
+
   }
 }
 @media screen and (min-width: 1170px) {

@@ -7,6 +7,8 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa"
 
+
+  // Save links as constants 
 const data = [
   {
     id: 1,
@@ -44,6 +46,9 @@ const links = data.map(link => {
   )
 })
 
+
+
+  // Pass in a special styling 
 export default ({ styleClass }) => {
   return (
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>

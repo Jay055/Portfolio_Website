@@ -3,10 +3,16 @@ import React from "react"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
+
+
+
+// console.log('woring');
 const Layout = ({ children }) => {
+  console.log(children);
   return (
     <>
-      <h2>layout component</h2>
+      <Navbar /> 
+      {children}
     </>
   )
 }
