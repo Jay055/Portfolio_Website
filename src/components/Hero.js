@@ -21,8 +21,9 @@ const query = graphql`
     `
 
 
-    // Get Static Image
+    
 const Hero = () => {
+  // Get Static Image
   const data = useStaticQuery(query);
   // console.log(data) 
       // Destructure Image from query 
