@@ -51,4 +51,6 @@ export default Services
 //<----- ACCESS API DATA --------> 
 // To access api data we grant public permissions 
 // http://localhost:1337/jobs (where jobs is our content type)
+
+//  Sort in Strapi Play Ground 
 // 
