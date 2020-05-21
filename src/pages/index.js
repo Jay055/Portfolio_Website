@@ -9,11 +9,14 @@ import Blogs from "../components/Blogs"
 
 
 
-  // With the query we have access to the nodes of the data
+  // With the query we have access to the nodes of the data from graphQL
 export default ({data}) => {
   // data gives access to nodes 
   // console.log(data);
-  const{allStrapiProjects:{nodes:projects}} = data; 
+  const{
+ allStrapiProjects:{nodes:projects},
+ allStrapiBlogs:{nodes:blogs}
+} = data; 
 
 
   return (
@@ -24,6 +27,7 @@ export default ({data}) => {
       {/* Pass projects as props  */}
     <Projects projects={projects} title="featured projects"
     showLink />
+    <Blogs blogs={blogs} title="latest articles" showLink />
 
   </Layout>
   
@@ -72,6 +76,7 @@ export const query = graphql`
             }
           }
         }
+        category
       }
     }
   }
