@@ -36,7 +36,8 @@ module.exports = {
         //singleTypes:[`about` ]
         // contentTypes: [`jobs`, `projects`, `blogs`],
         contentTypes: [`jobs`, `projects`, `blogs`],
-        // singleTypes: [`about`],
+        // For single types we use a different method
+        singleTypes: [`about`],
       },
     },
     {
