@@ -22,7 +22,7 @@ export default ({data}) => {
     <Services />
     <Jobs />
       {/* Pass projects as props  */}
-    <Projects project={projects} title="featured projects"
+    <Projects projects={projects} title="featured projects"
     showLink />
 
   </Layout>
@@ -32,8 +32,8 @@ export default ({data}) => {
 // ...
 
 
-// Replace scr from the query with fragment 
-// ...GatsbyImageSharpFluid
+// Replace scr from the query with fragment ...GatsbyImageSharpFluid
+// Get our Projects Query from graphql 
 export const query = graphql`
   {
     allStrapiProjects(filter: {featured: {eq: true}}) {
