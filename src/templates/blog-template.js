@@ -7,13 +7,15 @@ const ComponentName = () => {
   return <h2>blog post template</h2>
 }
 
-// export const query = graphql`
-//   query GetSingleBlog($slug: String) {
-//     blog: strapiBlogs(slug: { eq: $slug }) {
-//       content
 
-//     }
-//   }
-// `
+  // Get specific blog with unique slog
+export const query = graphql`
+  query GetSingleBlog($slog: String) {
+    blog: strapiBlogs(slog: { eq: $slog }) {
+      content
+
+    }
+  }
+`
 
 export default ComponentName
