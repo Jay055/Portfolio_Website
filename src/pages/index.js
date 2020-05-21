@@ -9,16 +9,56 @@ import Blogs from "../components/Blogs"
 
 
 
+  // With the query we have access to the nodes of the data
+export default ({data}) => {
+  // data gives access to nodes 
+  // console.log(data);
+  const{allStrapiProjects:{nodes:projects}} = data; 
 
-export default () => {
+
   return (
   <Layout> 
     <Hero />
     <Services />
     <Jobs />
+      {/* Pass projects as props  */}
+    <Projects project={projects} title="featured projects"
+    showLink />
 
   </Layout>
   
   )
 }
+// ...
+
+
+// Replace scr from the query with fragment 
 // ...GatsbyImageSharpFluid
+export const query = graphql`
+  {
+    allStrapiProjects(filter: {featured: {eq: true}}) {
+      nodes {
+        github
+        id
+        description
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+
+            }
+          }
+        }
+        stack {
+          id
+          title
+        }
+        title
+        url
+      }
+    }
+  }
+`
+
+// export default ComponentName
+
