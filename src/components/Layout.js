@@ -6,13 +6,20 @@ import Footer from "./Footer"
 
 
 
-// console.log('woring');
+
 const Layout = ({ children }) => {
-  console.log(children);
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen)
+  }
+
+  
   return (
     <>
-      <Navbar /> 
+      <Navbar toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       {children}
+      <Footer />
     </>
   )
 }

@@ -27,14 +27,8 @@ const ComponentName = ({data}) => {
   </Layout>
 }
 
-
 // Add Cloudinary to Strapi 
-//  Images in our blog within the  Rich text field fails when we host the site due to it's url address. 
-// We can solve this by using the cloudary api (open an account)
-// Then install the npm package strapi-provider-upload-cloudinary in the "strapi project"(!gatsby project)
 
-// Your configuration would be set up by using 
-//./extensions/upload/config/settings.json 
 
 
   // Get specific blog with unique slog
