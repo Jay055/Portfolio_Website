@@ -35,7 +35,7 @@ module.exports = {
         // contentTypes: [`jobs`, `projects`, `blogs`, ],
         //singleTypes:[`about` ]
         // contentTypes: [`jobs`, `projects`, `blogs`],
-        contentTypes: [`jobs`, `projects`],
+        contentTypes: [`jobs`, `projects`, `blogs`],
         // singleTypes: [`about`],
       },
     },
