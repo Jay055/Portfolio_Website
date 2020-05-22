@@ -4,9 +4,9 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 
 // Destructure props from Blogs.js
-const Blog = ({id, title, image, date,category, slug, desc}) => {
+const Blog = ({id, title, image, date,category, slog, desc}) => {
   // Send to Unique Page 
-  return <Link to={`/blogs/${slug}`} key={id}>
+  return <Link to={`/blogs/${slog}`} key={id}>
     <article>
       <Image fluid={image.childImageSharp.fluid}
       className="blog-img" /> 

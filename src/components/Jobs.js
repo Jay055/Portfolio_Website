@@ -39,7 +39,7 @@ const Jobs = () => {
 
   return (
   <section className="section jobs">
-    <Title title="expierence" /> 
+    <Title title="Education" /> 
     <div className="jobs-center">
         {/* btn container, map through experience for different buttons */}
       <div className="btn-container">
