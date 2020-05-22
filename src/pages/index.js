@@ -22,12 +22,12 @@ export default ({data}) => {
   return (
   <Layout > 
     <Hero />
-    <Services />
+    {/* <Services /> */}
     <Jobs />
       {/* Pass projects as props  */}
     <Projects projects={projects} title="featured projects"
     showLink />
-    <Blogs blogs={blogs} title="latest articles" showLink />
+    {/* <Blogs blogs={blogs} title="latest articles" showLink /> */}
 
   </Layout>
   

@@ -3,6 +3,7 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
+import Typewriter from './Typewriter';
 
 
 
@@ -22,7 +23,8 @@ const query = graphql`
 
 
     
-const Hero = () => {
+const Hero = (props) => {
+  console.log(props);
   // Get Static Image
   const data = useStaticQuery(query);
   // console.log(data) 
@@ -37,7 +39,12 @@ const Hero = () => {
       <article className="hero-info">
       <div>
         <div className="underline"></div>
-          <h1>I'm Uche </h1>
+        
+          
+        
+          <Typewriter  className="hero-title" text="I'm Uche" />
+         
+
           <h4> Web Developer </h4>
           <Link to ="/contact" className="btn">
             contact me 
